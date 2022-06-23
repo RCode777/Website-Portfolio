@@ -4,10 +4,10 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   font-family: sans-serif;
-  overflow-x: hidden;
   background-color: #0f172a;
 }
 
