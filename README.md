@@ -4,7 +4,7 @@ tugas web dari dicoding academy
 <table>
   <th>Link Web : </th>
   <td>
-    rcode777.github.io/Website-Portfolio/
+    https://rcode777.github.io/Website-Portfolio/
   </td>
 </table>
 
