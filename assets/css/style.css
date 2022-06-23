@@ -129,11 +129,11 @@ h1 {
 
 /* About */
 #about {
-  padding: 80px 0;
+  padding: 70px 0 0 0;
   background-color: rgb(30 41 59);
 }
 .about {
-  text-align: center;
+  text-align: center !important;
   text-transform: uppercase;
 }
 .line {
@@ -163,7 +163,7 @@ h1 {
 .icon ul li svg {
   margin: 10px;
   width: 40px !important;
-  border: 1px solid #0f172a;
+  border: 1px solid aqua;
   padding: 15px;
   border-radius: 50%;
 }
@@ -177,15 +177,35 @@ h1 {
   text-transform: uppercase;
   margin-top: 30px;
 }
-.card-1 {
-  border: 1px solid aqua;
-  padding-bottom: 30px;
-  margin: 20px;
+.card {
+  box-shadow: 0px 14px 56px -11px rgb(56 189 248);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+  justify-content: center;
+  padding-bottom: 40px;
 }
-.project-1 img {
-  width: 400px !important;
+.card h4, .card p {
+  color: white;
 }
-.project-1 article {
+.project-1 img,
+.project-2 img,
+.project-3 img,
+.project-4 img {
+  width: 300px !important;
+}
+.project-1 aside,
+.project-2 aside,
+.project-3 aside,
+.project-4 aside {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+.project-2 p,
+.project-3 p,
+.project-4 p,
+.project-1 p {
   margin-top: 10px;
   color: white;
 }
