@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=IBM+Plex+Mono:wght@100&family=Koulen&family=Quicksand:wght@300&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Quicksand", sans-serif;
   background-color: #0f172a;
   overflow-x: hidden;
 }
@@ -165,7 +167,7 @@ h1 {
   padding: 20px;
   transition: 0.5s;
   text-align: center;
-  color: gray;
+  color: white;
   line-height: 23px;
 }
 .text-about:hover {
@@ -176,11 +178,16 @@ h1 {
   display: inline;
 }
 .icon ul li svg {
+  transition: 0.3s;
   margin: 10px;
   width: 40px !important;
-  border: 1px solid aqua;
+  border: 1px solid #0f172a;
   padding: 15px;
   border-radius: 50%;
+}
+.icon ul li svg:hover {
+  border: 1px solid aqua;
+  box-shadow: 0px 14px 56px -11px rgb(56 189 248);
 }
 
 #project {
@@ -194,7 +201,7 @@ h1 {
 }
 .flex-container {
   margin-top: 40px;
-  margin: 20px;
+  margin: 10px;
   display: flex;
   align-items: center;
 }
@@ -272,6 +279,9 @@ footer .name {
     float: right;
     margin-top: -250px;
   }
+  nav ul li {
+    transition: 0.3s !important;
+  }
   nav ul li:hover::after {
     content: "";
     display: block;
@@ -325,7 +335,7 @@ footer .name {
     z-index: 20;
     width: 100%;
     transform: translateX(100%);
-    transition: all 1s;
+    transition: all 0.7s;
   }
   nav ul li a:hover {
     background-color: aqua;
