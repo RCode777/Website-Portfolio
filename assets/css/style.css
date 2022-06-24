@@ -17,6 +17,7 @@ nav {
   position: fixed !important;
   left: 0;
   top: 0;
+  z-index: 4;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   display: flex;
@@ -144,6 +145,20 @@ h1 {
   margin-top: 10px !important;
 }
 
+.poto {
+  height: 400px;
+  width: 400px;
+  margin-top: 30px;
+  background-color: rgb(0, 204, 255);
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+.poto img {
+  width: 300px;
+  margin-right: 25px;
+  margin-top: -60px;
+}
+
 .text-about {
   border: 1px solid aqua;
   border-radius: 10px;
@@ -177,37 +192,61 @@ h1 {
   text-transform: uppercase;
   margin-top: 30px;
 }
+.flex-container {
+  margin-top: 40px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
 .card {
   box-shadow: 0px 14px 56px -11px rgb(56 189 248);
   transition: 0.3s;
-  width: 40%;
-  border-radius: 5px;
-  justify-content: center;
+  width: 60%;
+  border-radius: 10px;
   padding-bottom: 40px;
 }
-.card h4, .card p {
+.card:hover {
+  transform: translateY(-10px);
+}
+.card h4,
+.card p {
+  margin: 10px;
+  text-align: center;
   color: white;
 }
-.project-1 img,
-.project-2 img,
-.project-3 img,
-.project-4 img {
-  width: 300px !important;
+.card h4 {
+  text-align: center;
+  border-bottom: 2px solid aqua;
 }
-.project-1 aside,
-.project-2 aside,
-.project-3 aside,
-.project-4 aside {
-  float: right;
-  width: 25%;
-  padding-left: 20px;
+
+#contact {
+  padding: 80px 0;
+  background-color: rgb(30 41 59);
 }
-.project-2 p,
-.project-3 p,
-.project-4 p,
-.project-1 p {
-  margin-top: 10px;
-  color: white;
+.contact {
+  text-align: center !important;
+}
+
+.icon-contact {
+  justify-content: center;
+}
+
+.icon-contact ul li {
+  display: inline;
+  list-style: none;
+}
+.icon-contact ul li svg {
+  margin-top: 30px !important;
+  margin: 10px;
+  width: 40px !important;
+  border: 1px solid #0f172a;
+  padding: 30px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.icon-contact ul li svg:hover {
+  border: 1px solid aqua;
+  box-shadow: 0px 14px 56px -11px rgb(56 189 248);
 }
 
 footer {
@@ -260,6 +299,12 @@ footer .name {
     margin-right: 25px;
     margin-top: -60px;
   }
+  .card {
+    margin: 40px;
+  }
+  .card:hover {
+    transform: translateY(-20px);
+  }
 }
 
 /* Tampilan mobile */
@@ -310,6 +355,9 @@ footer .name {
     margin-right: -25px;
     margin-top: -60px;
   }
+  .flex-container {
+    flex-direction: column !important;
+  }
 }
 
 /* Tampilan Tablet */
@@ -336,5 +384,8 @@ footer .name {
     width: 250px;
     margin-right: -25px;
     margin-top: -60px;
+  }
+  .flex-container {
+    flex-direction: column !important;
   }
 }
