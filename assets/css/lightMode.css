@@ -1,0 +1,44 @@
+/* Light Mode */
+body.modeTerang {
+  background-color: white;
+}
+
+body.modeTerang html {
+  scrollbar-color: white #0099ff !important;
+}
+body.modeTerang html::-webkit-scrollbar-thumb {
+  background-color: white !important;
+}
+body.modeTerang html::-webkit-scrollbar-track {
+  background-color: rgb(231, 243, 253) !important;
+}
+
+body.modeTerang #banner h1 {
+  color: #0f172a;
+}
+body.modeTerang #about {
+  background-color: rgb(231, 243, 253);
+}
+body.modeTerang #about .about,
+body.modeTerang #about .text-about {
+  color: #0f172a;
+}
+body.modeTerang #project .project,
+body.modeTerang #project p,
+body.modeTerang #project h4 {
+  color: #0f172a;
+}
+body.modeTerang #contact {
+  background-color: rgb(231, 243, 253);
+}
+body.modeTerang #contact h1 {
+  color: #0f172a;
+}
+body.modeTerang .mode::before {
+  content: "Light ";
+}
+@media (min-width: 992px) {
+  body.modeTerang nav ul li a {
+    color: #0f172a;
+  }
+}
